@@ -22,14 +22,14 @@ const LoginScreen = ({navigation}) => {
         <TextInput
           style={styles.input}
           value={email}
-          placeholder="Ingresa el email"
+          placeholder="Enter email"
           onChangeText={text => setEmail(text)}
         />
 
         <TextInput
           style={styles.input}
           value={password}
-          placeholder="Ingresa la contraseña"
+          placeholder="Enter password"
           onChangeText={text => setPassword(text)}
           secureTextEntry
         />
@@ -42,9 +42,9 @@ const LoginScreen = ({navigation}) => {
         />
 
         <View style={{flexDirection: 'row', marginTop: 20}}>
-          <Text>¿No tienes cuenta? </Text>
+          <Text>Don't have an account? </Text>
           <TouchableOpacity onPress={() => navigation.navigate('Register')}>
-            <Text style={styles.link}>Registrar</Text>
+            <Text style={styles.link}>Register</Text>
           </TouchableOpacity>
         </View>
       </View>
